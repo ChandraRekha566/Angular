@@ -1,0 +1,14 @@
+<h1>Registration Confirmation</h1>
+<h3>Congratulations!...Your registration has been confirmed</h3>
+
+<div class="info">
+    <p>Name : {{registrationData.userName}}</p>
+    <p>UserId : {{registrationData.userId}}</p>
+    <p>Country : {{registrationData.country}}</p>
+    <p>Address : {{registrationData.address}}</p>
+    <p>Gender: {{registrationData.gender}}</p>
+    <p>Skills</p>
+    <p *ngFor="let skill of registrationData.skills">
+        {{skill}}
+    </p>
+</div>
